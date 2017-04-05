@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Мишка: Форма заказа</title>
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__wrapper ">
+            <ul class="main-nav__list">
+              <li class="page-header__logo">
+                <a class="page-header__logo-link" href="index.html">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img src="img/logo-mobile.svg" alt="Логотип Мишки">
+                  </picture>
+                </a>
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
+              </li>
+              <li class="main-nav__item  main-nav__item--catalog">
+                <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-nav__item main-nav__item--order">
+                <a class="main-nav__link main-nav__link--order" href="#">Вязание на заказ</a>
+              </li>
+              <li class="main-nav__item main-nav__item--delivery">
+                <span class="main-nav__delivery">Бесплатная доставка по России</span>
+              </li>
+              <li class="main-nav__item main-nav__item--search">
+                <a class="main-nav__search-link" href="#">
+                  <svg class="main-nav__search-icon" width="17.6px" height="17.6px">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-search"></use>
+                  </svg>
+                </a>
+                <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
+              </li>
+              <li class="main-nav__item main-nav__item--user">
+                <svg class="main-nav__cart-icon" width="20.294px" height="18.849px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-cart"></use>
+                </svg>
+                <a class="main-nav__link main-nav__link--user" href="#">Корзина: пока пуста</a>
+              </li>
+              <li class="main-nav__item main-nav__item--new">
+                <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
+              </li>
+              <li class="main-nav__item main-nav__item--sale">
+                <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <h1 class="page__order--title">
+      Вязание на заказ
+    </h1>
+    <section class="order-form">
+      <p class="order-form__text">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+        форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form-group">
+          <div class="form-group__wrapper">
+            <legend class="form-group__title form-group__title--type">Тип</legend>
+            <div class="form-group__item">
+              <div class="form-group__option">
+                <input class="form-group__input form-group__input--radio visually-hidden" type="radio" id="decor-type" name="product-type" value="interior-accessory" checked>
+                <label class="form-group__caption form-group__caption--accessory" for="decor-type">Аксессуар для интерьера</label>
+              </div>
+              <div class="form-group__option">
+                <input class="form-group__input form-group__input--radio visually-hidden" type="radio" id="toys-type" name="product-type" value="child-toys">
+                <label class="form-group__caption" for="toys-type">Детская игрушка</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-group form-group--color">
+          <div class="form-group__wrapper">
+            <legend class="form-group__title form-group__title--color">Цвет</legend>
+            <div class="form-group__item form-group__item--color">
+              <div class="form-group__option form-group__option--color">
+                <input class="form-group__input form-group__input--checkbox visually-hidden" type="checkbox" id="order-white-color" name="white-color" checked>
+                <label class="form-group__caption form-group__caption--color" for="order-white-color">Белый</label>
+              </div>
+              <div class="form-group__option form-group__option--color">
+                <input class="form-group__input form-group__input--checkbox visually-hidden" type="checkbox" id="order-gray-color" name="gray-color" checked>
+                <label class="form-group__caption form-group__caption--color" for="order-gray-color">Серый</label>
+              </div>
+              <div class="form-group__option form-group__option--color">
+                <input class="form-group__input form-group__input--checkbox visually-hidden" type="checkbox" id="order-tif-color" name="tif-color">
+                <label class="form-group__caption form-group__caption--color" for="order-tif-color">«Тиффани»</label>
+              </div>
+              <div class="form-group__option form-group__option--color">
+                <input class="form-group__input form-group__input--checkbox visually-hidden" type="checkbox" id="order-black-color" name="black-color">
+                <label class="form-group__caption form-group__caption--color" for="order-black-color">Черный</label>
+              </div>
+              <div class="form-group__option form-group__option--color">
+                <input class="form-group__input form-group__input--checkbox visually-hidden" type="checkbox" id="order-pink-color" name="pink-color">
+                <label class="form-group__caption form-group__caption--color" for="order-pink-color">Розовый</label>
+              </div>
+              <div class="form-group__option form-group__option--color">
+                <input class="form-group__input form-group__input--checkbox visually-hidden" type="checkbox" id="order-orange-color" name="orange-color">
+                <label class="form-group__caption form-group__caption--color" for="order-orange-color">Оранжевый</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-group form-group--info">
+          <div class="form-group__wrapper">
+            <legend class="form-group__title form-group__title--info">фио</legend>
+            <div class="form-group__item form-group__item--info">
+              <div class="form-group__option form-group__option--info">
+                <label class="form-group__caption form-group__caption--info" for="order-name">Имя:</label>
+                <input class="form-group__input form-group__input--text" type="text" id="order-name" name="name" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="form-group__option form-group__option--info">
+                <label class="form-group__caption form-group__caption--info" for="order-surname">Фамилия:</label>
+                <input  class="form-group__input form-group__input--text" type="text" id="order-surname" name="surname" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="form-group__option form-group__option--info">
+                <label class="form-group__caption form-group__caption--info" for="order-patronymic">Отчество:</label>
+                <input class="form-group__input form-group__input--text" type="text" id="order-patronymic" name="patronymic" placeholder="Отчество, если желаете">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group form-group--order">
+          <div class="form-group__wrapper form-group__wrapper--order">
+            <div class="form-group__item form-group__item--phone">
+              <svg class="form-group__phone-icon" width="25" height="24">
+                <use fill="currentColor" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-phone"></use>
+              </svg>
+              <label class="form-group__title form-group__title--order" for="order-phone">тел</label>
+              <input class="form-group__input form-group__input--phone" type="tel" id="order-phone" name="phone" placeholder="+7 XXX XXX XX XX*" required>
+            </div>
+            <div class="form-group__item form-group__item--email">
+              <svg class="form-group__mail-icon" width="32px" height="32px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-mail"></use>
+              </svg>
+              <label class="form-group__title form-group__title--order" for="order-mail">e-mail</label>
+              <input class="form-group__input form-group__input--mail" type="email" id="order-mail" name="mail" placeholder="Ваш Email*" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group__wrapper">
+            <label class="form-group__title form-group__title--additional" for="order-additional">доп</label>
+            <div class="form-group__item form-group__item--additional">
+              <textarea class="form-group__textarea" id="order-additional" name="additional" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="order-form__submit">
+          <p class="form-group__text">*Поля обязательны для заполнения</p>
+          <button class="button button--form" type="submit">Отправить заказ</button>
+        </div>
+      </form>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <svg width="102" height="34">
+            <use fill="currentColor" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#logo-footer"></use>
+          </svg>
+        </a>
+        <p class="social-links">
+          <a class="social-links__item social-links__item--instagram" href="#">
+            <svg width="22" height="21">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#social-instagram"></use>
+            </svg>
+            Мы в Инстаграме</a>
+          <a class="social-links__item social-links__item--facebook" href="#">
+            <svg width="15" height="28">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#social-facebook"></use>
+            </svg>
+            Мы в Фейсбуке
+          </a>
+          <a class="social-links__item social-links__item--twitter" href="#">
+            <svg width="23" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#social-twitter"></use>
+            </svg>
+            Мы в Твиттере
+          </a>
+        </p>
+        <p class="page-footer__copyright">
+          <b class="page-footer__text">Разработано</b>
+          <a class="page-footer__icon-link" href="https://htmlacademy.ru">
+            <svg width="38" height="43">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#htmlacademy"></use>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
