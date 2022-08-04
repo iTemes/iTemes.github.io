@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Track configurator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/material/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+            --color-key: #0e4010;
+            --diagonal: linear-gradient(135deg, #4caf50 50%, rgba(0, 0, 0, 0.1) 50%);
+        }
+    </style>
+</head>
+
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Track configurator</h1>
+        <p>Vue 3 Composition Api, Vuex, Router</p>
+    </header>
+
+    <section class="slide">
+        <!-- Create your first slide -->
+        <h2>Ключевая мотивация</h2>
+        <p>
+            Помочь клиентам конфигурировать сложные трековые системы освещения, не вникая в технические детали и не
+            выясняя какие комплектующие нужны для ее работы.
+        </p>
+
+    </section>
+
+    <section class="slide">
+        <h2>Стек</h2>
+        <ul>
+            <li>Vue 3 Composition Api</li>
+            <li>Vuex, Vue Router</li>
+            <li>i18n</li>
+            <li>Bootstrap, SCSS</li>
+            <li>Svgdotjs</li>
+            <li><s>vue3-jest</s> TODO</li>
+        </ul>
+    </section>
+    <section class="slide">
+        <h3>Структура:</h3>
+        <p>Приложение состоит из 4 шагов:</p>
+        <ul>
+            <ol>
+                <li>Выбор общих параметров системы и формирование превью системы(Тип встройки, цвет, электропитание)
+                </li>
+                <li>Определение формы, размеров, добавление треков</li>
+                <li>Отображение получившейся конфигурации и добавление светильников</li>
+            </ol>
+        </ul>
+    </section>
+    <section class="slide" id="step1">
+        <figure>
+            <img class="cover" src="images/step1.png" alt="Выбор общих параметров системы">
+            <figcaption class="copyright right white">
+                Step 1
+            </figcaption>
+        </figure>
+    </section>
+    <section class="slide" id="step2">
+        <figure>
+            <img class="cover" src="images/step2.png" alt="Определение формы">
+            <figcaption class="copyright right white">
+                Step 2
+            </figcaption>
+        </figure>
+    </section>
+    <section class="slide" id="step2-1">
+        <figure>
+            <img class="cover" src="images/step2-1.png" alt="Добавление треков">
+            <figcaption class="copyright right white">
+                Step 2.1
+            </figcaption>
+        </figure>
+    </section>
+    <section class="slide" id="step2-1">
+        <figure>
+            <img class="cover" src="images/step3.png" alt="Добавление светильников">
+            <figcaption class="copyright right white">
+                Step 3
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h3>Что получилось реализовать:</h3>
+        <ul>
+            <ol>
+                <li>Использовать возможности Vue3</li>
+                <li>Миграция некоторых компонентов с Vue2</li>
+                <li>Более глубокое понимание модулей Vuex</li>
+            </ol>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h3>Что еще необходимо:</h3>
+        <ul>
+            <ol>
+                <li><strong>Покрытие тестами</strong></li>
+                <li>Декомпозиция компонентов</li>
+                <li>Рефакторинг кодовой базы, для реализации SVG рендера, которая написана "в лоб"</li>
+                <li>Подключение к существующему бекенду</li>
+            </ol>
+        </ul>
+    </section>
+
+    <footer class="badge">
+        <a style="margin-bottom: 2em;" href="https://github.com/iTemes/track-configurator">See me on GitHub</a>
+        <a href="https://github.com/iTemes/track-configurator">Try me on Netlify</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 2022 Yours Truly, Famous Inc. -->
+
+</body>
+
+</html>
